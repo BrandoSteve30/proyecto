@@ -1,0 +1,78 @@
+header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(18, 18, 18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+.logo-header img{
+    padding: 3px;
+    width: 85px;
+    margin-left: 30px;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+.nav-menu li{
+    margin-right: 5rem;
+}
+.nav-menu a{
+    color: #fff;
+}
+.nav-menu li:last-child{
+    background:#4ad295;
+    padding: .25rem .75rem;
+    border-radius: 10rem;
+}
+.menu-icon img{
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+
+@media (max-width:500px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top:95px;
+        left:-100%;
+        background: rgb(49, 140, 251);
+        width: 40%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        align-items: center;
+        padding: 2rem;
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+        margin: 5px;
+    }
+    .nav-menu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+}
+
+
+
