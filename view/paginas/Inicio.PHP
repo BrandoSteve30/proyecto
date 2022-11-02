@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4 sticky-top">
   <div class="container-fluid">
-    <a class="titlet navbar-brand" href="#">Leonard Euler</a>
+    <a class="titlet navbar-brand" href="inicio.PHP">Leonard Euler</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
       aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -13,6 +13,9 @@
       <div class="navbar-nav d-flex text-light">
         <li class="nav-item">
           <a class="nav-link" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#valores">Nuestros Valores</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -124,7 +127,7 @@
 </div>
 
 
-<div class="title text-center"><label for="" class="text-center">
+<div class="title text-center" id="valores"><label for="" class="text-center">
     <h1>PLAN DE APRENDIZAJE</h1>
   </label>
 </div>

@@ -132,18 +132,25 @@ background-repeat: no-repeat;
     display: none;
 }
 
+@media screen and (max-width:500px)
+{
+    .contenedorAlbum{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+    .tarjeta{
+        width: 10rem !important; 
+    }
+}
+
 @media screen and (max-width:800px)
 {
     .contenedorAlbum{
-        display: none;
-    }
+        grid-template-columns: repeat(3, 1fr);
     
-    .paginasAlbum{
-        display: none;
     }
-
-    .albumCelular{
-        display: block;
+    .tarjeta{
+        width: 14rem !important; 
     }
 }
 

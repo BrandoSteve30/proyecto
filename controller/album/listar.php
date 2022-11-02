@@ -68,12 +68,12 @@ if ($filas>0) {
         
         $fecha=$fila['fechaRegistro']-> format('d/m/Y');
 
-        $output['data'].= "<div class='card' style='width: 25rem;'>";
+        $output['data'].= "<div class='card tarjeta' style='width: 18rem;'>";
         $output['data'].= "<img class='card-img-top' src=view/static/albumImg/".$fila['nombreImagen']." alt='Card image cap'>";
         $output['data'].= "<div class='card-body'>";
         $output['data'].= "<h5 class='card-title'>".$fila['titulo']."</h5>";
         // $output['data'].= "<p class='card-text'>".$fila['descripcion']."</p>";
-        // $output['data'].= "<p class='card-text'>$fecha</p>";
+        $output['data'].= "<p class='card-text'>$fecha</p>";
         $output['data'].= "</div>";
         $output['data'].= "</div>";
     }
