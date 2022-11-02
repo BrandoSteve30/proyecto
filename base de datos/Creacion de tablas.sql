@@ -122,3 +122,13 @@ dniDocente char(8) not null,
 
 constraint fk_dniDocentePago foreign key(dniDocente) references docentes(dniDocente)
 )
+
+drop table if exists album
+create table album
+(
+codigoImg char(10) primary key,
+nombreImagen char(50) not null,
+titulo char(50) null,
+descripcion char(255) null,
+fechaRegistro smalldatetime default getdate()
+)

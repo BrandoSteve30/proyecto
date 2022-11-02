@@ -16,5 +16,6 @@
 </head>
 <body>
 <?php include_once "paginas/inicio.php";?>
+<script src="controller/album/mostrarAlbum.js"></script>
 </body>
 </html>

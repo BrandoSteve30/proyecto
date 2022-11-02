@@ -14,7 +14,7 @@
 			"CharacterSet"=>"UTF-8");
 			
 			// $server="192.168.0.231";
-			// $conexion=array("Database"=>"Argosal",
+			// $conexion=array("Database"=>"Euler",
 			// 				"UID"=>"paraclase",
 			// 				"PWD"=>"12345",
 			// 				"CharacterSet"=>"UTF-8");

@@ -5,30 +5,13 @@ $model=new conexion();
 $con=$model->conectar();
 
 // en el caso de solo querer determinadas columnas usar esto con el mismo nombre de las columnas...
-$columnas=['codigo','asesor','nombre','dni','telefono','producto','lineaProcedente','operadorCedente','modalidad','tipo','planR','equipo','formaDePago','numeroReferencia','sec','tipoFija','planFija','estado','fechaRegistro'];
+$columnas=['codigoImg','nombreImagen','titulo','descripcion','fechaRegistro'];
 
 // tabla a seleccionar
-$tabla='whatsapp';
-
-// $buscar=isset($_POST['busqueda']) ? $con->mssql_escape($_POST['busqueda']) : null;
-$buscar= isset($_POST['busqueda']) ? $_POST['busqueda'] : null;
-
-// busqueda de datos
-$where='';
-
-if ($buscar!=null) {
-    // $buscar='jorge';
-    $where="where (";
-    $cont= count($columnas);
-    for ($i=0; $i < $cont; $i++) { 
-        $where.=$columnas[$i]." like '%".$buscar."%' or ";
-    }
-    $where=substr_replace($where, "", -3);
-    $where.=")";
-}
+$tabla='album';
 
 // limite de registros
-$limite = isset($_POST['registros']) ? $_POST['registros'] : 10;
+$limite = 12;
 $pagina = isset($_POST['pagina']) ? $_POST['pagina'] : 0;
 
 if (!$pagina) {
@@ -43,9 +26,9 @@ $sLimite = " offset $inicio rows fetch next $limite rows only ";
 //usamos las columnas o la consulta personalisada...
 // $sql = "select $sLimite ".implode(", ", $columnas)." from $tabla $where";
 // cantidad de registros devueltos en la consulta
-$contar="select * from $tabla $where";
+$contar="select * from $tabla";
 
-$sql = "select ".implode(", ", $columnas)." from $tabla $where order by codigo $sLimite";
+$sql = "select ".implode(", ", $columnas)." from $tabla order by codigoImg $sLimite";
 // para verificar errores en la consulta
 // echo $sql;
 
@@ -76,33 +59,32 @@ if ($totalContar===0) {
 }
 
 $output=[];
-$output['mensaje']= $msg;
+// $output['mensaje']= $msg;
 $output['data']= '';
 $output['paginacion']= '';
 
 if ($filas>0) {
-    $i=$inicio+1;
     while ($fila=sqlsrv_fetch_array($resultado)) {
         
-        $code = $fila['codigo'];
         $fecha=$fila['fechaRegistro']-> format('d/m/Y');
 
-        $output['data'].= "<tr>";
-        $output['data'].= "<td align='center'>$i</td>";
-        $output['data'].= "<td align='left'>".$fila['nombre']."</td>";
-        $output['data'].= "<td align='center'>".$fila['telefono']."</td>";
-        $output['data'].= "<td align='center'>".$fila['producto']."</td>";
-        $output['data'].= "<td align='center'>".$fila['sec']."</td>";
-        $output['data'].= "<td align='center'>".$fila['estado']."</td>";
-        $output['data'].= "<td align='center'>".$fecha."</td>";
-        $output['data'].= "<td align='center'><label onclick="."abrirModalDetalle('$code');"."><span class='material-symbols-outlined'>info</span></label></td>";
-        $output['data'].= "</tr>";
-        $i+=1;
+        $output['data'].= "<div class='card' style='width: 25rem;'>";
+        $output['data'].= "<img class='card-img-top' src=view/static/albumImg/".$fila['nombreImagen']." alt='Card image cap'>";
+        $output['data'].= "<div class='card-body'>";
+        $output['data'].= "<h5 class='card-title'>".$fila['titulo']."</h5>";
+        // $output['data'].= "<p class='card-text'>".$fila['descripcion']."</p>";
+        // $output['data'].= "<p class='card-text'>$fecha</p>";
+        $output['data'].= "</div>";
+        $output['data'].= "</div>";
     }
 } else {
-    $output['data'].= "<tr>";
-    $output['data'].= "<td align='center' colspan=8 height='100px'>Sin Resultados...</td>";
-    $output['data'].= "</tr>";
+    $output['data'].= "<div class='card' style='width: 18rem;'>";
+    $output['data'].= "<img class='card-img-top' src=view/static/albumImg/sinImagen.png alt='Sin Imágen'>";
+    $output['data'].= "<div class='card-body'>";
+    $output['data'].= "<h5 class='card-title'>Sin Imágenes</h5>";
+    // $output['data'].= "<p class='card-text'>Aun no se han registrado imágenes al albúm</p>";
+    $output['data'].= "</div>";
+    $output['data'].= "</div>";
 }
 
 // paginacion

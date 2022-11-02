@@ -119,3 +119,31 @@ background-repeat: no-repeat;
 .border-top{
     --bs-border-color: black;
 }
+
+.contenedorAlbum{
+    width: 90%;
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width:800px)
+{
+    .contenedorAlbum{
+        display: none;
+    }
+    
+    .paginasAlbum{
+        display: none;
+    }
+
+    .albumCelular{
+        display: block;
+    }
+}
+
