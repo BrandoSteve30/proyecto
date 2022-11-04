@@ -1,7 +1,7 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4 sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 sticky-top">
   <div class="container-fluid">
-    <a class="titlet navbar-brand" href="inicio.PHP">Leonard Euler</a>
+    <a class="titlet navbar-brand" href="#">Leonard Euler</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
       aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,38 +15,38 @@
           <a class="nav-link" href="#nosotros">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#valores">Nuestros Valores</a>
+          <a class="nav-link" href="#valores">Valores</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Institucion Educativa
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">EBR</a></li>
-            <li><a class="dropdown-item" href="#">Album</a></li>
+          <ul class="dropn dropdown-menu">
+            <li><a class="dropdown-item" href="#Aprendizaje">Plan de Aprendizaje</a></li>
+            <li><a class="dropdown-item" href="#Cursos">Cursos</a></li>
           </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Academia
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">EBA</a></li>
-            <li><a class="dropdown-item" href="#">Album</a></li>
-          </ul>
-        </li>
+        </li>        
       </div>
     </div>
   </div>
 </nav>
 
-<div class="imgbody card" style="width: 100%;">
-  <img src="view/static/img/ftoportada.jpeg" class="card-img-top" alt="...">
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="view/static/img/ftoportada.jpeg" class="d-block w-100" alt="...">        
+      </div>
+    </div>
 </div>
 
+<div class="titlev text-center" id="nosotrosv"><label for="" class="text-center">
+    <h1></h1>
+  </label>
+</div>
 
-<div class="title text-center" id="nosotros"><label for="" class="text-center">
-    <h1>NOSOTROS</h1>
+<div class="title text-end" id="nosotros"><label for="">
+    <h1 id="titletext" class="position-relative">NOSOTROS</h1>
   </label>
 </div>
 
@@ -74,10 +74,15 @@
       </div>
     </div>
   </div>
-</div>  
+</div>
 
-<div class="title text-center"><label for="" class="text-center">
-    <h1>NUESTROS VALORES</h1>
+<div class="titlev text-center" id="nosotrosv"><label for="" class="text-center">
+    <h1></h1>
+  </label>
+</div>
+
+<div class="title text-center mt-1" id="valores"><label for="" class="text-center">
+    <h1 id="titletext2" class="position-relative">NUESTROS VALORES</h1>
   </label>
 </div>
 
@@ -126,9 +131,14 @@
   </div>
 </div>
 
+<div class="titlev text-center" id="nosotrosv"><label for="" class="text-center">
+    <h1><!----Vacio--></h1>
+  </label>
+</div>
 
-<div class="title text-center" id="valores"><label for="" class="text-center">
-    <h1>PLAN DE APRENDIZAJE</h1>
+
+<div class="title text-center" id="Aprendizaje"><label for="" class="text-center">
+    <h1 id="titletext3" class="position-relative">PLAN DE APRENDIZAJE</h1>
   </label>
 </div>
 
@@ -181,9 +191,14 @@
   </div>
 </div>
 
+<div class="titlev text-center" id="nosotrosv"><label for="" class="text-center">
+    <h1><!----Vacio--></h1>
+  </label>
+</div>
 
-<div class="title text-center"><label for="" class="text-center">
-  <h1>CURSOS</h1>
+
+<div class="title text-center" id="Cursos"><label for="" class="text-center">
+  <h1 id="titletext4" class="position-relative">CURSOS</h1>
 </label></div>
 
 <div class="container">
@@ -191,7 +206,7 @@
     <div class="accordion-item text-center">
       <h2 class="accordion-header" id="headingThree">
         <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneEBR" aria-controls="collapseOne">
-          Educación Basica Regular
+          <h1>Institucion Educativa</h1>
         </button>
       </h2>
       <div id="collapseOneEBR" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleEBR">
@@ -326,7 +341,7 @@
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoEBA" aria-expanded="false" aria-controls="collapseTwo">
-          Educación Basica Alternativa
+          <h1>Academia</h1>
         </button>
       </h2>
       <div id="collapseTwoEBA" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleEBA">
@@ -431,45 +446,17 @@
   </div>
 </div>
 
-<div class="title text-center">
-  <label for="" class="text-center">
-    <h1>HORARIO DE ATENCION AL CLIENTE</h1>
+<div class="titlev text-center" id="nosotrosv"><label for="" class="text-center">
+    <h1><!----Vacio--></h1>
   </label>
 </div>
 
-<div class="container">
-  <div class="card mx-4 text-center" style="background-color: rgba(33, 33, 33,1);">
-    <div class="card-body">
-      <table class="table table-bordered m-0" style="color: #fff;">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col"><h3>Lunes a Viernes</h3></th>
-            <th scope="col"><h3>Sabado</h3></th>      
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th><h3>Dia</h3></th>
-            <td><h4>8 a 5</h4></td>
-            <td><h4></h4></td>
-          </tr>
-          <tr>
-            <th><h3>Tarde</h3></th>
-            <td><h4></h4></td>   
-            <td><h4></h4></td>
-          </tr>            
-        </tbody>
-      </table>     
-    </div>   
-  </div>
-</div>   
+
+<div class="title text-center" id="Album"><label for="" class="text-center">
+  <h1 id="titletext5" class="position-relative">ALBUM</h1>
+</label></div>
 
 <section class="album">
-  <div class="title text-center">
-    <label for="" class="text-center">
-      <h1>ALBUM</h1>
-    </label>
     <div class="contenedorAlbum" id="listarAlbum">
       <!-- albúm -->
     </div>
@@ -509,12 +496,18 @@
   </div>
 </section>
 
- 
+<div class="titlev text-center" id="nosotrosv"><label for="" class="text-center">
+    <h1><!----Vacio--></h1>
+  </label>
+</div>
+
+
+<div class="title text-center" id="Equipo"><label for="" class="text-center">
+  <h1 id="titletext6" class="position-relative">EQUIPO</h1>
+</label></div> 
+
+
 <div class="container">
-  <div class="equipo card">
-    <div class="card-header text-center" style="font-family: 'Sawarabi Gothic', sans-serif;">
-      <h1>EQUIPO</h1>
-    </div>
     <div class=" card-body">
       <div class="row row-cols-1 row-cols-md-4 g-4 mx-4 text-center my-5">
         <div class="col">
@@ -549,8 +542,8 @@
           <div class="carde card h-100">
             <img src="view/static/img/perfil.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">No se dejal ahi yo lo cambio</h5>
-              <p class="card-text">Tesorero</p>
+              <h5 class="card-title">Consuelo Bustamante Gálvez</h5>
+              <p class="card-text">Tesorera</p>
             </div>
           </div>
         </div>
@@ -563,9 +556,11 @@
 <div class="footer card text-bg-dark" >
   <div class="card-body">
     <div class="container">
-      <footer>
+      <footer>        
         <div class="row">
-          <div class="col mx-md-5 my-4 ">
+          <div class="col mx-md-5 my-4">
+            <span class="text-center"><h5>Contactanos</h5></span>
+            <hr>
             <h5 class="mx-4">Dirección</h5>
             <ul class="nav flex-column mx-4">
               <li class="nav-item mb-2">Av. La Rivera 02, Patapo - Posope Alto</li>
@@ -578,40 +573,46 @@
             <h5 class="mx-4">Telefono</h5>
             <ul class="nav flex-column mx-4">
               <li class="nav-item mb-2">074 428028</li>
-              <li class="nav-item mb-2">074 428028</li>           
+              <li class="nav-item mb-2">074 428117</li>           
             </ul>                     
             <h5 class="mx-4">Correo</h5>
             <ul class="nav flex-column mx-4">
               <li class="nav-item mb-2">colegio_leonard_euler@hotmail.com</li>           
             </ul>                 
           </div>  
-    
-          <div class="col mb-3">
-            <div class="form card" style="max-width: 25rem;">
-              <div class="card-header text-center">
-                <h5>Contactanos</h5>
-              </div>
-              <form action="">
-                <div class="card-body" style="color: #000;">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                    <label for="floatingInput">Ingrese su nombre</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingPassword" placeholder="email" required>
-                    <label for="floatingPassword">Introduzca correo electronico</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Ingrese su mensaje</label>
-                  </div>
-                  <div class="d-grid gap-2 mb-3">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                  </div>
-                </div>
-            </form>
+
+          <div class="col my-4">
+            <span class="text-center"><h5>Atencion al cliente</h5></span>
+            <hr>
+            <div class="my-5 rounded-4 card mx-1 text-center" style="background-color: rgba(33, 33, 33,1);">
+              <div class="">
+                <div class="rounded-5 table-responsive">
+                  <table class="table table-bordered m-0" style="color: #fff;">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"><h3>Lunes a Viernes</h3></th>
+                        <th scope="col"><h3>Sabado</h3></th>      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th><h3>Dia</h3></th>
+                        <td><h4>8:00 a 12:45</h4></td>
+                        <td><h4>9:00 a 11:00</h4></td>
+                      </tr>
+                      <tr>
+                        <th><h3>Tarde</h3></th>
+                        <td><h4>16:00 a 18:00</h4></td>   
+                        <td><h4>----</h4></td>
+                      </tr>            
+                    </tbody>
+                  </table> 
+                </div>                
+              </div>   
+            </div>
           </div>
-        </div>
+        
         
     
         <div class="d-flex justify-content-between border-top pt-2">

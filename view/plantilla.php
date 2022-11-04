@@ -17,5 +17,7 @@
 <body>
 <?php include_once "paginas/inicio.php";?>
 <script src="controller/album/mostrarAlbum.js"></script>
+<script src="view/static/anim.js"></script>
 </body>
 </html>
+
