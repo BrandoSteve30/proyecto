@@ -10,6 +10,7 @@
         <li><a href='index.php?pagina=dashboard&lugar=calificaciones'>CALIFICACIONES</a></li>
         <li><a href='index.php?pagina=dashboard&lugar=album'>ALBUM</a></li>
         <li><a href='index.php?pagina=dashboard&lugar=alumnos'>ALUMNOS</a></li>
+        <li><a href='index.php?pagina=dashboard&lugar=usuarios'>USUARIOS</a></li>
         <li><a href="controller/acceso/logout.php">SALIR</a></li>
     </ul>
 </div>
