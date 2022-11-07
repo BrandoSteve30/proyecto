@@ -1,22 +1,34 @@
 <div class="body">
-    <div class="login-card-container">
-            <div class="login-card">
-                <div class="login-card-header">
-                    <h1>Iniciar sesion</h1>
-                    <!-- <div>Porfavor ingresa tu registro</div> -->
-                </div>
-                <form action="controller/acceso/login.php" method="post" class="login-card-form">
-                    <div class="form-item">
-                        <span class="form-item-icon material-symbols-outlined">person</span>
-                        <input type="text" name="dni" id="dni" required autocomplete='off' maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Ingresa tu DNI">
-                    </div>
-                    <div class="form-item">
-                        <span class="form-item-icon material-symbols-outlined">lock</span>
-                        <input type="password" name="clave" id="clave" maxlength="6" required autocomplete='off' oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Ingresa tu clave">
-                    </div>
-                    <button type="submit">Entrar</button>
-                </form>
-            </div>
-        </div>
+
+    <div class="logo" id="logo">
+        <img src="/logoDash.png" alt="">
     </div>
+    <div class="box">
+        <form class="form" action="controller/acceso/login.php" method="post">
+            <h1>Ingresa</h1>
+            <div class="inputBox">
+                <input type="text" name="dni" id="dni" required autocomplete='off' maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                <span>DNI</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="clave" id="clave" maxlength="6" required autocomplete='off' oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                <span>Contraseña</span>
+                <i></i>
+            </div>
+            <input type="submit" value="Iniciar sesion">
+        </form>
+    </div> 
+    
+    <div class="date" id="date">
+        <h1 id="hora"></h1>   
+        <h1 id="min"></h1>
+        <div class="two">
+            <h1 id="second"></h1>
+            <h1 id="pre"></h1>
+        </div>
+        
+    </div>
+    
 </div>
+<script src="view/static/login.js"></script>

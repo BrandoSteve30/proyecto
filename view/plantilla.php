@@ -14,6 +14,7 @@
   
   <link rel="stylesheet" href="view/static/style.css">
   <link rel="stylesheet" href="view/static/dashboard.css">
+  <link rel="stylesheet" href="view/static/login.css">
 </head>
 <body>
 <?php 
@@ -62,7 +63,7 @@
     }
     else
     {
-        
+
         include_once "paginas/login.php";
         
     }
