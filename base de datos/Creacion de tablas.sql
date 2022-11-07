@@ -132,3 +132,13 @@ titulo char(50) null,
 descripcion char(255) null,
 fechaRegistro smalldatetime default getdate()
 )
+
+drop table if exists usuarios
+create table usuarios
+(
+dni char(8) primary key,
+nombre char(25) not null,
+clave char(6) not null,
+tipo char(13) not null,
+fechaRegistro datetime default getdate()
+)
