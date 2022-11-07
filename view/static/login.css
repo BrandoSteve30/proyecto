@@ -86,6 +86,7 @@
     font-size: xxx-large;
     font-family: 'Poppins', sans-serif;
     left: 55%;
+    align-items: center;
 }
 
 .date h1{
