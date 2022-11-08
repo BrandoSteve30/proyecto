@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>I.E. Leonard Euler</title>
   <link rel="icon" href="view/static/img/logo_leonard.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,15 +24,13 @@
     {
         if (session_start())
         {
-            if($_GET["pagina"]==="dashboard" && isset($_SESSION['user']))
+            // if($_GET["pagina"]==="dashboard" && isset($_SESSION['user']))
+            if($_GET["pagina"]==="dashboard")
             {
                 if (isset($_GET["lugar"]))
                 {
                     if($_GET["lugar"]==="perfil"){
                         include_once "paginas/perfil.php";
-                    }
-                    elseif ($_GET["lugar"]==="home") {
-                        include_once "paginas/home.php";
                     }
                     elseif ($_GET["lugar"]==="cursos") {
                         include_once "paginas/cursos.php";
@@ -45,10 +44,13 @@
                     elseif ($_GET["lugar"]==="alumnos") {
                         include_once "paginas/alumnos.php";
                     }
+                    elseif ($_GET["lugar"]==="usuarios") {
+                        include_once "paginas/usuarios.php";
+                    }
                 }
                 else 
                 {
-                    include_once "paginas/home.php";
+                    include_once "paginas/cursos.php";
                 }
 
             }
@@ -64,7 +66,12 @@
     }
     else
     {
-
+        // if (isset($_SESSION['user'])) {
+        //     include_once "paginas/home.php";
+        // }
+        // else {
+        //     include_once "paginas/login.php";
+        // }
         include_once "paginas/login.php";
         
     }
