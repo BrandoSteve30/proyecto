@@ -14,7 +14,12 @@
     align-items: center;
     min-height: 100vh;
     background-color: #23242a;
+    /* background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); */
     font-family: 'Quicksand', sans-serif;
+    background-image: url(https://wallpapersmug.com/download/2560x1440/2fa40a/starry-sky-night-mountians-5k.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .logo{
@@ -78,31 +83,67 @@
     z-index: 10;
 }
 
-.date{
+.capa{
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(3px);
+    /* border: 1px solid #000; */
+    box-shadow:  2px 2px 2px 2px black;
+    width: 24%;
     display: flex;
     position: absolute;
-    width: 30%;
-    color: #fff;
-    font-size: xxx-large;
-    font-family: 'Poppins', sans-serif;
+    /* width: 23%; */
     left: 55%;
+    border-radius: 10px;
+    z-index: 332;
+    padding: 1% 3% 0% 1%;
+}
+
+.date{
+    display: flex;     
+    width: auto;
+    /* filter: blur(4px);   */
+    /* background: transparent; */
+    color: rgb(172, 171, 171);
+    font-size: xxx-large;
+    font-family: 'Poppins', sans-serif;    
     align-items: center;
+    /* font-style: italic; */
 }
 
 .date h1{
-    padding: 0 4%;
+    padding: 0 5%;
+    /* font-style: italic; */
+    font-size: 60pt;
+    opacity: 1;
+    
 }
 
-#pre{
+.date p{
+    font-size: larger;
+}
+
+.pre{
     font-weight: 100;
     width: 2%;
+    /* font-style: italic; */
 }
 
 .two{
-    display: flex;
-    flex-direction: column;
-    font-size: medium;  
-    margin-top: 5%;  
+    /* display: flex; */
+    /* background: #fff; */
+    /* flex-direction: column; */
+    /* font-size: medium;   */
+    padding: 0 3%;
+    margin: 1%;
+    /* margin-top: 5%;   */
+}
+
+.second{
+    font-weight: bold;
+}
+
+.two h1{
+    font-size:medium;
 }
 
 .form{
