@@ -23,9 +23,9 @@
     <div class="date" id="date">
         <h1 id="hora"></h1>   
         <h1 id="min"></h1>
+        <h1 id="second"></h1>
+        <h1 id="pre"></h1>
         <div class="two">
-            <h1 id="second"></h1>
-            <h1 id="pre"></h1>
         </div>
         
     </div>

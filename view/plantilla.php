@@ -18,11 +18,12 @@
 </head>
 <body>
 <?php 
+    // var_dump(session_start());
     if (isset($_GET["pagina"])) 
     {
         if (session_start())
         {
-            if($_GET["pagina"]==="dashboard")
+            if($_GET["pagina"]==="dashboard" && isset($_SESSION['user']))
             {
                 if (isset($_GET["lugar"]))
                 {
@@ -56,8 +57,8 @@
                 include_once "paginas/inicio.php";
             }
             else {
-                // include_once "paginas/login.php";
-                include_once "paginas/inicio.php";
+                include_once "paginas/login.php";
+                // include_once "paginas/inicio.php";
             }
         }
     }
