@@ -1,7 +1,7 @@
 <div class="body">
 
     <div class="logo" id="logo">
-        <img src="/logoDash.png" alt="">
+        <img src="view/static/img/logoDash.png" alt="Logo">
     </div>
     <div class="box">
         <form class="form" action="controller/acceso/login.php" method="post">
@@ -20,15 +20,19 @@
         </form>
     </div> 
     
-    <div class="date" id="date">
-        <h1 id="hora"></h1>   
-        <h1 id="min"></h1>
-        <h1 id="second"></h1>
-        <h1 id="pre"></h1>
-        <div class="two">
-        </div>
-        
+    
+    <div class="capa text-center" id="date">        
+        <div class="date">
+            <h1 id="hora"></h1>
+            <p>:</p> 
+            <h1 id="min"></h1>               
+                <div class="two text-center">
+                    <h1 id="second" class="second text-center"></h1>
+                    <h1 id="pre" class="pre text-center"></h1>
+                </div>        
+        </div>     
     </div>
+    
     
 </div>
 <script src="view/static/login.js"></script>

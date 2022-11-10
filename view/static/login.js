@@ -22,11 +22,11 @@ if (windowscale < 800) {
             psecond = document.getElementById('second');
             pampm = document.getElementById('pre')
 
-        if (hora >= 12) {
+        if (hora >= 13) {
             hora = hora - 12;
-            ampm = 'PM';
+            ampm = 'pm';
         } else{
-            ampm = 'AM';
+            ampm = 'am';
         }
 
         if (hora == 0){
