@@ -19,12 +19,23 @@
 </head>
 <body>
 <?php 
-    // var_dump(session_start());
+
+    // if (!isset($_SESSION["ValiSes"])) 
+    // {
+    //     include_once "paginas/login.php";
+    // }
+    // elseif ($_SESSION["ValiSes"] != "ok") 
+    // {
+    //     include_once "paginas/login.php";
+    // }
+    
+    // var_dump($_SESSION["user"]);
+
     if (isset($_GET["pagina"])) 
     {
-        if (session_start())
-        {
-            // if($_GET["pagina"]==="dashboard" && isset($_SESSION['user']))
+        // if (isset($_SESSION["ValiSes"]))
+        // {
+            // if($_GET["pagina"]==="dashboard" && isset($_SESSION['ValiSes']))
             if($_GET["pagina"]==="dashboard")
             {
                 if (isset($_GET["lugar"]))
@@ -54,7 +65,7 @@
                 }
 
             }
-            elseif($_GET["pagina"]==="static")
+            elseif($_GET["pagina"]==="static" && !isset($_SESSION['ValiSes']))
             {
                 include_once "paginas/inicio.php";
             }
@@ -62,14 +73,16 @@
                 include_once "paginas/login.php";
                 // include_once "paginas/inicio.php";
             }
-        }
+        // }
     }
     else
     {
-        // if (isset($_SESSION['user'])) {
-        //     include_once "paginas/home.php";
+        // if (isset($_SESSION['ValiSes'])) 
+        // {
+        //     include_once "paginas/cursos.php";
         // }
-        // else {
+        // else 
+        // {
         //     include_once "paginas/login.php";
         // }
         include_once "paginas/login.php";

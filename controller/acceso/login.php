@@ -30,14 +30,14 @@ else{
 if(($dni==$tdni) && ($clave == $tclave))
 {
 
-    session_name($tusu);
+    // session_name($tusu);
 	session_start();
+    // $sesion=session_name();
+	$_SESSION["ValiSes"]="ok";
 	$_SESSION["user"]=$tusu;
-    $sesion=session_name();
 	$_SESSION["tipo"]=$ttipo;
-    echo $_SESSION['user'], " | ", $_SESSION['tipo'], " | ", $sesion;
+    // echo $_SESSION['user'], " | ", $_SESSION['tipo'], " | ", $sesion;
 	header("location:../../index.php?pagina=dashboard");
-    // session_destroy();
 
 }
 
