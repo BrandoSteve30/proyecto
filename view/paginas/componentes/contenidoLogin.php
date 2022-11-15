@@ -5,7 +5,7 @@
     </div>
     <div class="box">
         <form class="form" action="controller/acceso/login.php" method="post">
-            <h1>Ingresa</h1>
+            <h2>Ingresar Sesion</h2>
             <div class="inputBox">
                 <input type="text" name="dni" id="dni" required autocomplete='off' maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
                 <span>DNI</span>
