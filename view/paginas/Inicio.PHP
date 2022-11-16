@@ -46,7 +46,7 @@
 </div>
 
 <div class="title text-end" id="nosotros"><label for="">
-    <h1 id="titletext" class="position-relative">NOSOTROS</h1>
+    <h1 id="titletext" >NOSOTROS</h1>
   </label>
 </div>
 
@@ -82,7 +82,7 @@
 </div>
 
 <div class="title text-center mt-1" id="valores"><label for="" class="text-center">
-    <h1 id="titletext2" class="position-relative">NUESTROS VALORES</h1>
+    <h1 id="titletext2">NUESTROS VALORES</h1>
   </label>
 </div>
 
@@ -138,16 +138,16 @@
 
 
 <div class="title text-center" id="Aprendizaje"><label for="" class="text-center">
-    <h1 id="titletext3" class="position-relative">PLAN DE APRENDIZAJE</h1>
+    <h1 id="titletext3">PLAN DE APRENDIZAJE</h1>
   </label>
 </div>
 
 <div class="container">
   <div class="row row-cols-1 row-cols-md-2 g-4 mx-4">
     <div class="col">
-      <div class="cardp card h-100">
+      <div class="cardp card h-100" >
         <div class="card-body">
-          <h2 class="card-title text-center">INICIAL</h2>
+          <h2  class="ini" class="card-title text-center" >INICIAL</h2>
           <hr>
           <p class="card-text">El proceso formativo en Educación Inicial, se basa en una metodología activa respetando
             sus etapas y desarrollo, reconociendo sus intereses, necesidades,habilidades y ritmos de aprendizaje.</p>
@@ -157,7 +157,7 @@
     <div class="col">
       <div class="cardp card h-100">
         <div class="card-body">
-          <h2 class="card-title text-center">PRIMARIA</h2>
+          <h2 class="prim" class="card-title text-center" >PRIMARIA</h2>
           <hr>
           <p class="card-text">La propuesta educativa se centra la labor educativa de una tutoría de calidad.
             Establecemos una relación directa y cercana, de escucha y acogida con cada uno de nuestros estudiantes, el
@@ -168,7 +168,7 @@
     <div class="col">
       <div class="cardp card h-100">
         <div class="card-body">
-          <h2 class="card-title text-center">SECUNDARIA</h2>
+          <h2 class="secu" class="text-center">SECUNDARIA</h2>
           <hr>
           <p class="card-text">El programa del Nivel de Educación Secundaria está diseñado para promover capacidades y
             competencias en los estudiantes para el logro de aprendizajes pertinentes. Se desarrolla el pensamiento
@@ -179,7 +179,7 @@
     <div class="col">
       <div class="cardp card h-100">
         <div class="card-body">
-          <h2 class="card-title text-center">CEBA</h2>
+          <h2 class="ceba" class="text-center">CEBA</h2>
           <hr>
           <p class="card-text">El plan de aprendizaje CEBA tiene por finalidad acercar a los estudiantes hacia una
             actitud universitaria o técnica, en la que predominen la madurez y la vocación por el estudio,
@@ -198,7 +198,7 @@
 
 
 <div class="title text-center" id="Cursos"><label for="" class="text-center">
-  <h1 id="titletext4" class="position-relative">CURSOS</h1>
+  <h1 id="titletext4">CURSOS</h1>
 </label></div>
 
 <div class="container">
@@ -453,7 +453,7 @@
 
 
 <div class="title text-center" id="Album"><label for="" class="text-center">
-  <h1 id="titletext5" class="position-relative">ALBUM</h1>
+  <h1 id="titletext5">ALBUM</h1>
 </label></div>
 
 <section class="album">
@@ -503,7 +503,7 @@
 
 
 <div class="title text-center" id="Equipo"><label for="" class="text-center">
-  <h1 id="titletext6" class="position-relative">EQUIPO</h1>
+  <h1 id="titletext6">EQUIPO</h1>
 </label></div> 
 
 
