@@ -5,15 +5,15 @@
     </div>
     <div class="listas">
         <ul class="listado">
-            <li><a href='index.php?pagina=dashboard&lugar=perfil'><span class="material-symbols-outlined">account_circle</span><span>PERFIL</span></a></li>
-            <li><a href='index.php?pagina=dashboard&lugar=cursos'><span class="material-symbols-outlined">collections_bookmark</span><span>CURSOS</span></a></li>
-            <li><a href='index.php?pagina=dashboard&lugar=calificaciones'><span class="material-symbols-outlined">edit_square</span><span>CALIFICACIONES</span></a></li>
-            <li><a href='index.php?pagina=dashboard&lugar=album'><span class="material-symbols-outlined">photo_library</span><span>ALBUM</span></a></li>
-            <li><a href='index.php?pagina=dashboard&lugar=alumnos'><span class="material-symbols-outlined">school</span><span>ALUMNOS</span></a></li>
-            <li><a href='index.php?pagina=dashboard&lugar=usuarios'><span class="material-symbols-outlined">account_box</span><span>USUARIOS</span></a></li>
+            <a href='index.php?pagina=dashboard&lugar=perfil'><li><span class="material-symbols-outlined">account_circle</span><span>PERFIL</span></li></a>
+            <a href='index.php?pagina=dashboard&lugar=cursos'><li><span class="material-symbols-outlined">collections_bookmark</span><span>CURSOS</span></li></a>
+            <a href='index.php?pagina=dashboard&lugar=calificaciones'><li><span class="material-symbols-outlined">edit_square</span><span>CALIFICACIONES</span></li></a>
+            <a href='index.php?pagina=dashboard&lugar=album'><li><span class="material-symbols-outlined">photo_library</span><span>ALBUM</span></li></a>
+            <a href='index.php?pagina=dashboard&lugar=alumnos'><li><span class="material-symbols-outlined">school</span><span>ALUMNOS</span></li></a>
+            <a href='index.php?pagina=dashboard&lugar=usuarios'><li><span class="material-symbols-outlined">account_box</span><span>USUARIOS</span></li></a>
         </ul>
         <ul class="salir">
-            <li><a href="controller/acceso/logout.php"><span class="material-symbols-outlined">logout</span><span>SALIR</span></a></li>
+            <a href="controller/acceso/logout.php"><li><span class="material-symbols-outlined">logout</span><span>SALIR</span></li></a>
         </ul>
     </div>
 </div>

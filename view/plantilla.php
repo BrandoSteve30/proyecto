@@ -20,6 +20,7 @@
 <body>
 <?php 
 
+// require_once("controller/acceso/login.php");
     // if (!isset($_SESSION["ValiSes"])) 
     // {
     //     include_once "paginas/login.php";

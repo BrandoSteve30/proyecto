@@ -52,10 +52,13 @@
     background: teal;
 }
 
-.header_dashboard .menu_dashboard .listas .listado li a{
+.header_dashboard .menu_dashboard .listas .listado a{
+    text-decoration: none;
+}
+
+.header_dashboard .menu_dashboard .listas .listado a li{
     display: flex;
     padding: 5px 10px;
-    text-decoration: none;
     color: black;
 }
 
@@ -82,10 +85,13 @@
     background: teal;
 }
 
-.header_dashboard .menu_dashboard .listas .salir li a{
+.header_dashboard .menu_dashboard .listas .salir a{
+    text-decoration: none;
+}
+
+.header_dashboard .menu_dashboard .listas .salir a li{
     display: flex;
     padding: 5px 10px;
-    text-decoration: none;
     color: black;
 }
 

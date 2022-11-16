@@ -35,7 +35,7 @@ drop table if exists cursos
 create table cursos
 (
 idCurso int identity primary key,
-nombreCurso char(10) not null,
+nombreCurso char(25) not null,
 dniDocente char(8) not null
 
 constraint fk_dniDocente foreign key(dniDocente) references docentes(dniDocente)
@@ -141,4 +141,14 @@ nombre char(25) not null,
 clave char(6) not null,
 tipo char(13) not null,
 fechaRegistro datetime default getdate()
+)
+
+drop table if exists cursosAcargo
+create table cursosAcargo
+(
+dniAlumno char(8) not null,
+idCurso int not null,
+
+constraint fk_cursoAcargoAlum foreign key(dniAlumno) references alumnos(dniAlumno),
+constraint fk_cusoAlumcargo foreign key(idCurso) references cursos(idCurso)
 )
