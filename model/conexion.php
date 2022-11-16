@@ -13,7 +13,7 @@
 			// "PWD"=>"123456",
 			// "CharacterSet"=>"UTF-8");
 			
-			$server="192.168.0.231";
+			$server="192.168.0.232";
 			$conexion=array("Database"=>"Euler",
 							"UID"=>"paraclase",
 							"PWD"=>"12345",

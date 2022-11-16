@@ -37,7 +37,7 @@ if(($dni==$tdni) && ($clave == $tclave))
 	$_SESSION["user"]=$tusu;
 	$_SESSION["tipo"]=$ttipo;
     // echo $_SESSION['user'], " | ", $_SESSION['tipo'], " | ", $sesion;
-	header("location:../../index.php?pagina=dashboard");
+	header("location:../../view/dashboard/index.php?pagina=dashboard");
 
 }
 

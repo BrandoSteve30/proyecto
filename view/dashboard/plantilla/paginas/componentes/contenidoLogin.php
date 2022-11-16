@@ -1,10 +1,10 @@
 <div class="body">
 
     <div class="logo" id="logo">
-        <img src="view/static/img/logoDash.png" alt="Logo">
+        <img src="../static/img/logoDash.png" alt="Logo">
     </div>
     <div class="box">
-        <form class="form" action="controller/acceso/login.php" method="post">
+        <form class="form" action="../../controller/acceso/login.php" method="post">
             <h2>Ingresar Sesion</h2>
             <div class="inputBox">
                 <input type="text" name="dni" id="dni" required autocomplete='off' maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
@@ -35,4 +35,4 @@
     
     
 </div>
-<script src="view/static/login.js"></script>
+<script src="../static/login.js"></script>
